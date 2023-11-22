@@ -1,6 +1,6 @@
 # How-to-change-the-legend-icon
 
-This article explains how to chnage the legend icon in blazor chart component.
+This article explains how to change the legend icon in blazor chart component.
 
 **Changing legend icon using LegendShape property**
 
