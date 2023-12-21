@@ -1,14 +1,14 @@
 # How-to-change-the-legend-icon
 
-This article explains how to change the legend icon in blazor chart component.
+This article explains how to change the legend icon in Blazor Chart Component.
 
-**Changing legend icon using LegendShape property**
+**Customizing legend icon in Blazor chart**
 
-[Blazor chart](https://www.syncfusion.com/blazor-components/blazor-charts) provide the support to change the shape of the legend icon using [LegendShape](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartSeries.html#Syncfusion_Blazor_Charts_ChartSeries_LegendShape) property in the [Series](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartSeries.html). The default icon shape for the legends is [SeriesType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.LegendShape.html#Syncfusion_Blazor_Charts_LegendShape_SeriesType).
+[Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts) supports the customization of the legend icon shape through the use of the [LegendShape](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartSeries.html#Syncfusion_Blazor_Charts_ChartSeries_LegendShape) property in the [Series](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.ChartSeries.html). By default, the icon shape corresponds to the [SeriesType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Charts.LegendShape.html#Syncfusion_Blazor_Charts_LegendShape_SeriesType).
 
 The following code snippet illustrates how to change the legend icon.
 
-**C#**
+**Index.razor**
 
 ```cshtml
 
@@ -19,9 +19,9 @@ The following code snippet illustrates how to change the legend icon.
     <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" />
 
     <ChartSeriesCollection>
-        <ChartSeries DataSource="@MedalDetails" Name="Gold" XName="Country" Width="2" Opacity="1" YName="Gold" Type="ChartSeriesType.Column" LegendShape="LegendShape.Circle" />
-        <ChartSeries DataSource="@MedalDetails" Name="Silver" XName="Country" Width="2" Opacity="1" YName="Silver" Type="ChartSeriesType.Column" LegendShape="LegendShape.SeriesType" />
-        <ChartSeries DataSource="@MedalDetails" Name="Bronze" XName="Country" Width="2" Opacity="1" YName="Bronze" Type="ChartSeriesType.Column" LegendShape="LegendShape.Diamond" />
+        <ChartSeries DataSource="@MedalDetails" Name="Gold" XName="Country" YName="Gold" Type="ChartSeriesType.Column" LegendShape="LegendShape.Circle" />
+        <ChartSeries DataSource="@MedalDetails" Name="Silver" XName="Country" YName="Silver" Type="ChartSeriesType.Column" LegendShape="LegendShape.SeriesType" />
+        <ChartSeries DataSource="@MedalDetails" Name="Bronze" XName="Country" YName="Bronze" Type="ChartSeriesType.Column" LegendShape="LegendShape.Diamond" />
     </ChartSeriesCollection>
 
     <ChartLegendSettings Visible="true" />
@@ -68,4 +68,3 @@ You can refer to our [Blazor Chart feature tour](https://www.syncfusion.com/blaz
 For current customers, you can check out our components from the [License and Downloads](https://www.syncfusion.com/sales/teamlicense) page. If you are new to Syncfusion, you can try our 30-day [free trial](https://www.syncfusion.com/downloads/blazor) to check out our other controls.
 
 If you have any queries or require clarifications, please let us know in the comments section below. You can also contact us through our [support forums](https://www.syncfusion.com/forums), [support portal](https://support.syncfusion.com/create), or [feedback portal](https://www.syncfusion.com/feedback/blazor-components?control=charts). We are always happy to assist you!
-

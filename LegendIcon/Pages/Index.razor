@@ -7,9 +7,9 @@
     <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category" />
 
     <ChartSeriesCollection>
-        <ChartSeries DataSource="@MedalDetails" Name="Gold" XName="Country" Width="2" Opacity="1" YName="Gold" Type="ChartSeriesType.Column" LegendShape="LegendShape.Circle" />
-        <ChartSeries DataSource="@MedalDetails" Name="Silver" XName="Country" Width="2" Opacity="1" YName="Silver" Type="ChartSeriesType.Column" LegendShape="LegendShape.SeriesType" />
-        <ChartSeries DataSource="@MedalDetails" Name="Bronze" XName="Country" Width="2" Opacity="1" YName="Bronze" Type="ChartSeriesType.Column" LegendShape="LegendShape.Diamond" />
+        <ChartSeries DataSource="@MedalDetails" Name="Gold" XName="Country" YName="Gold" Type="ChartSeriesType.Column" LegendShape="LegendShape.Circle" />
+        <ChartSeries DataSource="@MedalDetails" Name="Silver" XName="Country" YName="Silver" Type="ChartSeriesType.Column" LegendShape="LegendShape.SeriesType" />
+        <ChartSeries DataSource="@MedalDetails" Name="Bronze" XName="Country" YName="Bronze" Type="ChartSeriesType.Column" LegendShape="LegendShape.Diamond" />
     </ChartSeriesCollection>
 
     <ChartLegendSettings Visible="true" />
